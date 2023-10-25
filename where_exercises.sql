@@ -44,5 +44,5 @@ WHERE last_name LIKE 'E%'
 # Find all employees with a 'q' in their last name but not 'qu' — 547 rows.
 SELECT last_name
 FROM employees
-WHERE last_name Like '%q%'
+WHERE last_name LIKE '%q%'
  AND last_name NOT LIKE '%qu%';
